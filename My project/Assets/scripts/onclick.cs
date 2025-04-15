@@ -28,6 +28,7 @@ public class onclick : MonoBehaviour
                 if (hit.collider == box_collide)
                 {
                     SceneController.entergame();
+                    Debug.Log("enter classroom?");
                 }
 
             }

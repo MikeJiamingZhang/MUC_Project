@@ -31,7 +31,7 @@ public class EdwinMovement : MonoBehaviour
         float moveVert = Input.GetAxis("Vertical");
         */
         float moveHori = dynamicJoystick.Horizontal;
-        Debug.Log("x " + moveHori);
+        //Debug.Log("x " + moveHori);
 
         animator.SetFloat("xmovement", moveHori);
         animator.SetBool("xmove", (moveHori != 0.0));
@@ -39,7 +39,7 @@ public class EdwinMovement : MonoBehaviour
         animator.SetFloat("ymovement", moveVert);
         animator.SetBool("ymove", (moveVert != 0.0));
         animator.SetBool("Ismoving", ((moveHori != 0.0) || (moveVert != 0.0)));
-        Debug.Log("y " + moveVert);
+        //Debug.Log("y " + moveVert);
         transform.Translate(new Vector3((int) moveHori * speed * Time.deltaTime, (int) moveVert * speed * Time.deltaTime, 0f));
     }
 }

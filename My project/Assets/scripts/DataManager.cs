@@ -35,7 +35,7 @@ public class DataManager : MonoBehaviour
         {
             Instance = this;
             // persist this obj through scene loads
-            DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(gameObject);
             saveFilePath = Path.Combine(Application.persistentDataPath, "annotatedVideos.json");
             // try to load any prev saved data when the game starts
             LoadData();

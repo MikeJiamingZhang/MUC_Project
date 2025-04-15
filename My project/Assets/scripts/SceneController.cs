@@ -13,12 +13,12 @@ public class SceneController : MonoBehaviour
 
     public static void entergame()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("town_view");
     }
 
     public static void exitgame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("main_menu");
     }
 
     // Update is called once per frame
